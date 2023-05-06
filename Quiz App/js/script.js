@@ -150,7 +150,7 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); 
     result_box.classList.add("activeResult"); 
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3)
+    if (userScore > 3){
         let scoreTag = '<span>congrats! 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
@@ -163,6 +163,7 @@ function showResult(){
         scoreText.innerHTML = scoreTag;
     }
 }
+
 
 function startTimer(time){
     counter = setInterval(timer, 1000);
